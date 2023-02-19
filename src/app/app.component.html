@@ -1,21 +1,9 @@
 <h1 class="mainTitle">Somebody's Posts</h1>
 <div class="content-container">
-
   <div class="content-area">
     <div *ngFor="let d of data">
-    <h3 class="postHead">{{d.id}}. {{d.title}}</h3>
-   <!--<span>{{d.title}}</span>-->
-   <p>{{d.body}}</p>
-   
-   </div>
+      <h3 class="postHead">{{ d.id }}. {{ d.title }}</h3>
+      <p>{{ d.body }}</p>
+    </div>
   </div>
-
-   <!-- <tr *ngFor="let d of data" (click)="setBody(d)">
-      <td><span>{{d.id}}</span></td>
-      <td><span>{{d.title}}</span></td>
-    </tr>
-  </div>-->
-  <!-- Show selected item body here -->
-  <!--<h1>Selected item body</h1>
-  <p>{{selectedItemBody}}</p>-->
 </div>
